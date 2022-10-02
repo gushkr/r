@@ -1,12 +1,17 @@
 R
-## 데이터구조
-# 벡터(vector), 행렬(matrix), 배열(array), 데이터프레임(data frame)
+
 
 # 변수 타입이 궁금할때,
 typeof()
 mode()
 # 데이터구조가 궁금할 때,
 str()
+
+## 범주형 변수를 0,1로 처리
+option(contrasts=c("contr.trestment","contr.poly"))
+
+## 데이터구조
+# 벡터(vector), 행렬(matrix), 배열(array), 데이터프레임(data frame)
 
 ### vector 벡터 다루기
 ## 숫자를 벡터에 생성하기
