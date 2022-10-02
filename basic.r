@@ -1,8 +1,14 @@
 R
 ## 데이터구조
-# 벡터, 행렬, 데이터프레임
+# 벡터(vector), 행렬(matrix), 배열(array), 데이터프레임(data frame)
 
-### 벡터 다루기
+# 변수 타입이 궁금할때,
+typeof()
+mode()
+# 데이터구조가 궁금할 때,
+str()
+
+### vector 벡터 다루기
 ## 숫자를 벡터에 생성하기
 # 자료를 화면에서 입력 받고 싶을때,
 scan("data")
@@ -25,7 +31,7 @@ vec[vec>2] # 2보다 큰 값만 표현
 replace(vec, 3, 2) # vec의 3번째 자료를 2로 변경
 append(vec, 8,5) # vec의 5번째 자료다음에 8을 삽입
 
-## 행렬 다루기
+## matrix 행렬 다루기
 # 행(row →), 열(column ↓) 구분하기
 # 행렬을 생성하고 싶을 때,
 matrix(1:9, nrow=3) # 3개의 행(row)으로 행렬을 만들어라
@@ -39,7 +45,11 @@ slove(A) # A의 역행렬구하기
 eigen(A) # 고유치와 고유벡터 함수구하기
 chol(A) # Choleski 분해함수 구하기
 
-## 배열 다루기
+# big.matrix 행렬 다루기
+big.auto<-big.matrix(auto) # 기존의 데이터 구조를 big.matrix로 변경
+bigglm() # 빅데이터 형태를 분석할 수 있는 도구
+
+## array 배열 다루기
 # 배열은 행렬이 여러개 모아진것으로 생각하기
 # 배열을 생성하고 싶을때,
 array(1:6, c(2,3)) # 1~6의 자료로 2차원 배열 생성하기
@@ -155,3 +165,5 @@ table_name <- na.omit(auto)
 
 library(caret)
 confusionMatrix(predicted, actual)
+
+
